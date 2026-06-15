@@ -389,7 +389,25 @@ src
 ```
 
 ---
+## Scripts de Banco de Dados
 
+O projeto utiliza Flyway para versionamento do banco de dados.
+
+As migrations estão localizadas em:
+
+```text
+src/main/resources/db/migration
+```
+
+Atualmente o projeto possui:
+
+| Migration | Descrição |
+|------------|------------|
+| V1__create_tables.sql | Criação das tabelas tabela_tarifaria, categoria_tarifaria e faixa_consumo |
+
+As migrations são executadas automaticamente durante a inicialização da aplicação.
+
+---
 # Autor
 
 Matheus Reis
